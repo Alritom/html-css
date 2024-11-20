@@ -1,0 +1,33 @@
+body{
+    background-color: white;
+}
+
+main{
+    width: 510px;
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1px;
+}
+
+main > img{
+    margin-top: auto;
+   margin-right: auto;
+   margin-left: auto;
+   margin-bottom: -151px;
+    
+}
+
+input{
+    width: 40%;
+    padding: 20px 0px;
+    margin: 0% 0% 30% 30%;
+    border-radius: 30px;
+    box-shadow: 4px 4px 7px 3px rgba(0, 0, 0, 0.247);
+    border-color: white;
+}
+
+#container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-inline-start: 1%;
+}
