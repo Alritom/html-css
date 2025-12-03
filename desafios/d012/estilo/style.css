@@ -1,97 +1,97 @@
-@charset "UTF-8";
+@charset "UTF-8"; /* Define a codificação de caracteres do arquivo para UTF-8, garantindo a correta exibição de acentos e caracteres especiais. */
 
-@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passero+One&family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sriracha&display=swap'); /* Importa fontes externas do Google Fonts para serem usadas na página. */
 
-:root {
-    --fonte1: Verdana, Geneva, Tahoma, sans-serif; 
-    --fonte2: Passion One, sans-serif;
-    --fonte3: Sriracha, cursive;
+:root { /* Define variáveis CSS globais que podem ser reutilizadas em todo o documento. */
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;  /* Define uma variável para a fonte principal (sans-serif). */
+    --fonte2: 'Passion One', sans-serif; /* Define uma variável para a fonte de destaque (usada nos títulos). */
+    --fonte3: 'Sriracha', cursive; /* Define uma variável para a fonte do conteúdo do cordel (cursiva). */
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+* { /* Seletor universal que aplica estilos a todos os elementos da página. */
+    margin: 0px; /* Remove todas as margens externas padrão dos elementos. */
+    padding: 0px; /* Remove todos os preenchimentos internos padrão dos elementos. */
 }
 
-html, body {
-    font-family: var(--fonte1);
-    min-height: 100vh;
-    background-color: darkgray;
+html, body { /* Estilização para os elementos raiz da página (html e body). */
+    font-family: var(--fonte1); /* Define a família de fontes padrão usando a variável --fonte1. */
+    min-height: 100vh; /* Garante que o corpo da página tenha no mínimo a altura total da tela (viewport height). */
+    background-color: darkgray; /* Define a cor de fundo da página como cinza escuro. */
 }
 
-header {
-    background-color: black;
-    color: white;
-    text-align: center;
+header { /* Estilização para o cabeçalho da página. */
+    background-color: black; /* Define a cor de fundo do cabeçalho como preta. */
+    color: white; /* Define a cor do texto dentro do cabeçalho como branca. */
+    text-align: center; /* Centraliza todo o conteúdo de texto dentro do cabeçalho. */
 }
 
-header > h1 {
-    padding-top: 50px;    
-    font-variant: small-caps;
-    font-family: var(--fonte2);
-    font-size: 10vw;
+header > h1 { /* Estilização para o título h1 que é filho direto do header. */
+    padding-top: 50px;     /* Adiciona um preenchimento de 50 pixels na parte superior do h1. */
+    font-variant: small-caps; /* Transforma as letras minúsculas em maiúsculas de tamanho menor. */
+    font-family: var(--fonte2); /* Define a família de fontes usando a variável --fonte2. */
+    font-size: 10vw; /* Define o tamanho da fonte como 10% da largura da tela (viewport width), tornando-o responsivo. */
 }
 
-header > p {
-    padding-bottom: 50px;
+header > p { /* Estilização para o parágrafo que é filho direto do header. */
+    padding-bottom: 50px; /* Adiciona um preenchimento de 50 pixels na parte inferior do parágrafo. */
 }
 
-header a, footer a {
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
+header a, footer a { /* Estilização para os links (a) dentro do header e do footer. */
+    color: white; /* Define a cor do texto dos links como branca. */
+    text-decoration: none; /* Remove o sublinhado padrão dos links. */
+    font-weight: bolder; /* Deixa o texto dos links em negrito. */
 }
 
-header a:hover, footer a:hover {
-    text-decoration: underline;
+header a:hover, footer a:hover { /* Estilização para quando o mouse passa por cima dos links no header e footer. */
+    text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse sobre o link. */
 }
 
-section {
-    padding-top: 10vh;
-    padding-bottom: 10vh;
-    line-height: 2em;
-    padding-left: 30px;
-    font-family: var(--fonte3); 
-    font-size: 3.5vw;
+section { /* Estilização geral para todas as seções (section). */
+    padding-top: 10vh; /* Adiciona um preenchimento superior de 10% da altura da tela. */
+    padding-bottom: 10vh; /* Adiciona um preenchimento inferior de 10% da altura da tela. */
+    line-height: 2em; /* Define a altura da linha como o dobro do tamanho da fonte, melhorando a legibilidade. */
+    padding-left: 30px; /* Adiciona um preenchimento de 30 pixels à esquerda. */
+    font-family: var(--fonte3);  /* Define a família de fontes usando a variável --fonte3. */
+    font-size: 3.5vw; /* Define o tamanho da fonte como 3.5% da largura da tela, tornando-o responsivo. */
 }
 
-section p {
-    padding-bottom: 2em;
+section p { /* Estilização para os parágrafos dentro das seções. */
+    padding-bottom: 2em; /* Adiciona um preenchimento inferior de 2 vezes o tamanho da fonte. */
 }
 
-section.normal {
-    background-color: white;
-    color: black;
+section.normal { /* Estilização específica para seções com a classe "normal". */
+    background-color: white; /* Define a cor de fundo como branca. */
+    color: black; /* Define a cor do texto como preta. */
 }
 
-section.imagem{
-    background-color: rgb(77, 77, 240);
-    color: white;
-    box-shadow: inset 6px 6px 13px rgb(10, 10, 10);
-    background-size: cover;
-    background-attachment: fixed;
+section.imagem{ /* Estilização específica para seções com a classe "imagem". */
+    background-color: rgb(77, 77, 240); /* Define uma cor de fundo azul como fallback. */
+    color: white; /* Define a cor do texto como branca. */
+    box-shadow: inset 6px 6px 13px rgb(10, 10, 10); /* Adiciona uma sombra interna para dar profundidade. */
+    background-size: cover; /* Faz a imagem de fundo cobrir toda a área da seção. */
+    background-attachment: fixed; /* Fixa a imagem de fundo, criando o efeito parallax ao rolar a página. */
 }
 
-section.imagem > p {
-    display: inline-block;
-    padding: 5px;
-    background-color:  rgba(36, 35, 35, 0.425);
-    text-shadow: 1px 1px 0px black;
+section.imagem > p { /* Estilização para parágrafos que são filhos diretos de uma seção com classe "imagem". */
+    display: inline-block; /* Faz o parágrafo se comportar como um bloco, mas sem quebrar a linha. */
+    padding: 5px; /* Adiciona um pequeno preenchimento interno. */
+    background-color:  rgba(36, 35, 35, 0.425); /* Adiciona um fundo preto semitransparente para melhorar a legibilidade do texto sobre a imagem. */
+    text-shadow: 1px 1px 0px black; /* Adiciona uma sombra ao texto para destacá-lo do fundo. */
 }
 
-section#img01 {
-background-image: url('../imagens/background001.jpg');
-background-position: right center;
+section#img01 { /* Estilização específica para a seção com o ID "img01". */
+    background-image: url('../imagens/background001.jpg'); /* Define a primeira imagem de fundo. */
+    background-position: right center; /* Posiciona a imagem de fundo à direita e centralizada verticalmente. */
 }
 
-section#img02{
-    background-image: url('../imagens/background002.jpg');
-    background-position: right center;
+section#img02{ /* Estilização específica para a seção com o ID "img02". */
+    background-image: url('../imagens/background002.jpg'); /* Define a segunda imagem de fundo. */
+    background-position: right center; /* Posiciona a imagem de fundo à direita e centralizada verticalmente. */
 }
 
-footer {
-    background-color: black;
-    text-align: center;
-    color: white;
-    padding: 10px;
+footer { /* Estilização para o rodapé da página. */
+    background-color: black; /* Define a cor de fundo do rodapé como preta. */
+    text-align: center; /* Centraliza o texto no rodapé. */
+    color: white; /* Define a cor do texto como branca. */
+    padding: 10px; /* Adiciona um preenchimento interno de 10 pixels. */
 }

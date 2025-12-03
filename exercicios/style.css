@@ -1,48 +1,48 @@
-body {
-    background-color: rgb(69, 69, 69);
-    font: 13pt Arial;
+body { /* Início da estilização para o corpo (body) da página */
+    background-color: rgb(69, 69, 69); /* Define a cor de fundo do corpo como um cinza escuro */
+    font: 13pt Arial; /* Define a fonte padrão para tamanho 13 pontos e família Arial */
 }
 
-main {
-    background-color: white;
-    width: 500px;
-    padding: 20px;
-    margin: auto;
-    border-radius: 10px;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529);
+main { /* Início da estilização para o elemento principal (main) */
+    background-color: white; /* Define a cor de fundo do elemento main como branca */
+    width: 500px; /* Define a largura do elemento main como 500 pixels */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels */
+    margin: auto; /* Centraliza o elemento main horizontalmente na página */
+    border-radius: 10px; /* Arredonda os cantos do elemento main com um raio de 10 pixels */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.529); /* Adiciona uma sombra ao redor do elemento main */
 }
 
-h1 {
-    color: darkgoldenrod;
+h1 { /* Início da estilização para os títulos de nível 1 (h1) */
+    color: darkgoldenrod; /* Define a cor do texto dos h1 como 'darkgoldenrod' */
 }
 
-h2 {
-    color: rgb(125, 92, 8);
+h2 { /* Início da estilização para os títulos de nível 2 (h2) */
+    color: rgb(125, 92, 8); /* Define a cor do texto dos h2 como um tom de marrom/dourado */
 }
 
-aside {
-    display: block; 
-    font-size: 10pt;
-    text-align: justify;
-    background-color: rgb(222, 222, 222);
-    padding: 10px;
-    border-radius: 10px;
-    margin-bottom: 10px;
+aside { /* Início da estilização para o elemento lateral (aside) */
+    display: block;  /* Garante que o aside se comporte como um elemento de bloco */
+    font-size: 10pt; /* Define o tamanho da fonte dentro do aside como 10 pontos */
+    text-align: justify; /* Justifica o alinhamento do texto dentro do aside */
+    background-color: rgb(222, 222, 222); /* Define a cor de fundo do aside como um cinza claro */
+    padding: 10px; /* Adiciona um preenchimento interno de 10 pixels */
+    border-radius: 10px; /* Arredonda os cantos do aside com um raio de 10 pixels */
+    margin-bottom: 10px; /* Adiciona uma margem inferior de 10 pixels */
 }
 
-aside img {
-    width: 60px; 
-    display: block; 
-    float: left;
-    margin-right: 10px;
+aside img { /* Início da estilização para imagens dentro do elemento aside */
+    width: 60px;  /* Define a largura da imagem como 60 pixels */
+    display: block;  /* Faz com que a imagem se comporte como um elemento de bloco */
+    float: left; /* Faz a imagem flutuar para a esquerda, permitindo que o texto a contorne */
+    margin-right: 10px; /* Adiciona uma margem de 10 pixels à direita da imagem */
 }
 
-a, a:visited {
-    color: rgb(34, 34, 34);
-    font-weight: bolder;
+a, a:visited { /* Estilização para links (a) e links já visitados (a:visited) */
+    color: rgb(34, 34, 34); /* Define a cor do texto dos links como cinza escuro */
+    font-weight: bolder; /* Deixa o texto dos links em negrito */
 }
 
-a:hover {
-    color: darkgoldenrod;
-    text-decoration: none;
+a:hover { /* Estilização para quando o mouse passa por cima de um link (hover) */
+    color: darkgoldenrod; /* Muda a cor do link para 'darkgoldenrod' */
+    text-decoration: none; /* Remove o sublinhado do link */
 }
